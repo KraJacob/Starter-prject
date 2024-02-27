@@ -21,13 +21,10 @@ class CreateUsersTable extends Migration
             $table->string('login');
             $table->string('email')->unique()->nullable();
             $table->string('password');
-            $table->unsignedInteger('agence_id');
             $table->unsignedInteger('role_id');
             $table->enum('statut', ['ACTIVE','SUPPRIMER','DESACTIVE'])->default('ACTIVE');
             $table->integer('created_by')->nullable();
             $table->timestamps();
-
-            $table->foreign('agence_id')->references('id')->on('agences');
             $table->foreign('role_id')->references('id')->on('roles');
         });
     }

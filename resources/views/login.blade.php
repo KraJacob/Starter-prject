@@ -19,7 +19,7 @@
   <!-- /.login-logo -->
   <div class="card card-outline card-primary elevation-5">
     <div class="card-header text-center">
-        <img src="dist/img/logo.png" alt="Ylink Logo" class="brand-image">
+        <img src="dist/img/fleet.jpg" alt="Fleet Logo" style="width: 100%" class="brand-image">
     </div>
     <div class="card-body">
       <p class="login-box-msg">Entrer vos paramètres de connexion</p>

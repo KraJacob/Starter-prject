@@ -15,16 +15,15 @@ class UserAdminSeeder extends Seeder
      */
     public function run()
     {
-        $roles = Role::where('name', 'admin')->firstOrFail();
+//        $roles = Role::where('name', 'admin')->firstOrFail();
         User::create([
             'nom' => 'Adminstrateur',
             'prenom' => 'admin',
             'contact' => '00000000',
             'login' => 'admin',
             'email' => 'admin@admin.com',
-            'role_id' => $roles->id,
-            'password' => bcrypt('P@ss0rd225@#'),
-            'agence_id' => 1
+            'role_id' => 1,
+            'password' => bcrypt('Password'),
         ]);
     }
 }
